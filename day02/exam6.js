@@ -16,4 +16,3 @@ console.log(반환값2);  //사용자가 입력한 값
 // 3. 
 let 반환값3 = document.querySelector("h3").innerHTML  //h3이 마크당하고 있는 이너 호출
 console.log(반환값3);
-ㅇ

@@ -15,7 +15,7 @@ console.log(drink);
 
 
 alert("-수량-")         // 질문 입력 
-console.log("-수량-");  // 수량 입력
 let num = prompt();
+console.log("-수량-");  // 수량 입력
 console.log(num);
 
