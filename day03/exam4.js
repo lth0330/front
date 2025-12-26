@@ -63,7 +63,6 @@ console.log(`result : ${result7}`)
 let num1 = Number(prompt("1차 점수 :"))
 let num2 = Number(prompt("2차 점수 :"))
 let hap = num1+num2 >= 150 
-document.write(hap); 
 
 document.querySelector("h3").innerHTML = hap
 // 9번 문제 
