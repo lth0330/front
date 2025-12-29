@@ -1,24 +1,27 @@
 .writer{
-    font-size: 15px;
+    font-size: 18px;
+    
     font-weight: bold;
 }
 .content{
-    font-size: 12px;
-    word-spacing: 1px;
-    letter-spacing: 3px;
+    font-size: 13px;
+    word-spacing: 10px;
+    letter-spacing: 1px;
 }
-h1{  text-align:center;
+h1{  
+     font-size: 35px;
+     text-align:center;
      color :brown;
      font-family: 맑은고딕;
 }
 
-.질문{ font-size: 15px;
+.질문{ font-size: 18px;
       font-weight: bold;
 }
 
 .답 {
-  font-size: 12px;
-  word-spacing: 3px;
+  font-size: 13px;
+  word-spacing: 10px;
 letter-spacing: 1px;
 } 
 
