@@ -1,7 +1,15 @@
-
-
+.writer{
+    font-size: 15px;
+    font-weight: bold;
+}
+.content{
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: 3px;
+}
 h1{  text-align:center;
      color :brown;
+     font-family: 맑은고딕;
 }
 
 .질문{ font-size: 15px;
@@ -12,4 +20,4 @@ h1{  text-align:center;
   font-size: 12px;
   word-spacing: 3px;
 letter-spacing: 1px;
-}
+} 

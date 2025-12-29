@@ -2,6 +2,7 @@
 
 alert(" 문제 1 : 삼각형 넓이 계산")
 
+
 let 높이 = prompt("높이 : ")
 let 밑변 = prompt("밑변의 길이 :")
 let 삼각형넓이 = Number(높이)*Number(밑변)/2;
