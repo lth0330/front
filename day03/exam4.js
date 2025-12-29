@@ -1,4 +1,4 @@
-/*
+
 console.log(10 + 3);
 console.log(10 - 3);
 console.log(10 * 3);
@@ -57,15 +57,26 @@ console.log(`로그인 여부 : ${결과}`)
 let int7 =Number(prompt("입력한 정수값 :"))
 let result7 = int7%2==1 && int7%7 == 0
 console.log(`result : ${result7}`)
-*/
+
 
 // 8번 문제
 let num1 = Number(prompt("1차 점수 :"))
 let num2 = Number(prompt("2차 점수 :"))
-let hap = num1+num2 >= 150 
+let hap = num1+num2 
+let result = hap >= 150 ? "합격" : "불합격";
+document.querySelector("h3").innerHTML = result
 
-document.querySelector("h3").innerHTML = hap
 // 9번 문제 
+
+let name1 = prompt(" 이름1 :")
+let name2 = prompt(" 이름2 :")
+
+name1 += name1 =="유재석" ? "(방장)" : '';
+name2 += name2 =="유재석" ? "(방장)" : '';
+
+let result1 = ` <li> ${ name1} </li>
+                <li> ${ name2} </li>` ;
+document.querySelector("ol").innerHTML = result1
 
 
 

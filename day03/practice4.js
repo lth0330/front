@@ -1,5 +1,5 @@
 
-
+/*
 alert(" 문제 1 : 삼각형 넓이 계산")
 
 
@@ -30,6 +30,18 @@ let 몸무게 = prompt("몸무게(kg) : ")
 let 키 = prompt("키(cm) : ")
 console.log("키와 몸무게", 키,몸무게)
 let 키m = 키/100
-let BMI = Number(몸무게)/Number(키m)*Number(키m)
+let BMI = Number(몸무게)/Number(키m)*Numbeadr(키m)
 console.log("BMI 지수 : ",BMI)
 
+console.log("--------------------------------")
+let ID = prompt(" ID 입력 : ")
+let EM = prompt(" 이메일 입력 : ")
+let result5 = ID == "admin" || EM == "admin@TextDecoderStream.com"
+
+result5 = result5 == true ? "관리자" : "일반 사용자"
+console.log(`사용자의 등급 : ${result5}`)
+*/
+
+console.log("--------------------------------")
+let score = Number(prompt("점수 입력 : "))
+if ( score >=90){ document.querySelector(h2).inner}

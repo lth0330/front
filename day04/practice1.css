@@ -1,10 +1,5 @@
 
 
-@font-face {   /*  폰트 사이트에서 다운받은 폰트를 복붙한것*/
-    font-family: 'GMarketSans';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: 700;
-    font-display: swap; }
 
 .title{ font-family: "맑은 고딕";
         font-size: 25px;

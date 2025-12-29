@@ -1,0 +1,15 @@
+
+
+h1{  text-align:center;
+     color :brown;
+}
+
+.질문{ font-size: 15px;
+      font-weight: bold;
+}
+
+.답 {
+  font-size: 12px;
+  word-spacing: 3px;
+letter-spacing: 1px;
+}
