@@ -7,7 +7,7 @@
     font-display: swap; }
 
 .title{ font-family: "맑은 고딕";
-        font-size: ;
+        font-size: 25px;
 }
 
 .content1{ color: blue;
@@ -18,7 +18,7 @@
           line-height: 150%;
 }
 
-.content2 {
+.content2  {
   color: red;
   text-decoration: underline overline line-through;
   font-size: 15px;
@@ -30,6 +30,7 @@
   text-decoration: underline overline line-through;
   font-size: 20px;
   text-align:center;
+  font-weight: 700;
 }
 
 .content5 {
