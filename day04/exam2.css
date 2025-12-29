@@ -1,0 +1,34 @@
+
+.title{
+  font-family: "맑은 고딕","굴림";
+  font-size: 40px;
+  font-weight: bold;  /*글꼴 진하게*/
+  font-style: italic; /*글꼴 기울기*/
+
+}
+/* 외부폰트 : 1. 영문 : 구글폰트 , 한글 : 눈누폰트 */
+
+@font-face {   /*  폰트 사이트에서 다운받은 폰트를 복붙한것*/
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+.content{ 
+  font-family: 'GMarketSans'; 
+  color: purple;
+  word-spacing: 5px;  /* 단어들의 간격*/
+  letter-spacing: 2px; /* 글자 간격 */
+  line-height: 125%; /* 줄 간격 : %백분율*/
+}
+
+.writer{ 
+  text-align:center; /* content(위키백과)의 가로 정렬 */
+  text-decoration: underline overline line-through; /* 선 긋기(밑줄, 윗줄, 취소선) */ 
+  text-shadow: 1px -1px 1px gray; /* (X축 Y축 흐름정도 색깔)
+                                       텍스트 그림자 : X축( +right, -left) Y축( +botten, -top)*/
+
+ color: green;    /*방법 1*/
+ color: rgb(140, 200, 100); /* 방법 2 */
+ color: #000002 /*방법 3 (16진수)*/ 
+}
