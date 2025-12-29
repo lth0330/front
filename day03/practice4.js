@@ -1,7 +1,6 @@
 
-/*
-alert(" 문제 1 : 삼각형 넓이 계산")
 
+alert(" 문제 1 : 삼각형 넓이 계산")
 
 let 높이 = prompt("높이 : ")
 let 밑변 = prompt("밑변의 길이 :")
@@ -40,8 +39,40 @@ let result5 = ID == "admin" || EM == "admin@TextDecoderStream.com"
 
 result5 = result5 == true ? "관리자" : "일반 사용자"
 console.log(`사용자의 등급 : ${result5}`)
-*/
+
 
 console.log("--------------------------------")
 let score = Number(prompt("점수 입력 : "))
-if ( score >=90){ document.querySelector(h2).inner}
+if ( score >=90){
+  score = "A"}
+  else if (score>=80){ 
+    score = "B"}
+      else { score = "C"}
+  
+  document.querySelector("h2").innerHTML = score
+
+  console.log("--------------------------------")
+  let old = Number(prompt("나이 : "))
+    result8 = old <=29 && old >= 20
+    result88 = result8 == true ? "이벤트 대상입니다" : "이벤트 대상이 아닙니다."; 
+    console.log(`결과 : ${result88}`)
+
+ console.log("--------------------------------")
+ let likeCount = 3;
+ likeCount++;
+ console.log(`좋아요 [${likeCount}]`);
+
+ console.log("--------------------------------")
+let todeList = ['장보기', '과제하기']
+let newwork = prompt(" 새롭게 할일 : ")
+todeList.push(newwork)
+console.log (`새로운 배열 : ${todeList}`)
+
+
+ console.log("--------------------------------")
+ let waitingList = ['김민준','이서연', '박도윤', '최지우']
+ let lastname = waitingList.length-1
+ console.log(`마지막 대기자는 ${waitingList[lastname]}`)
+
+
+
