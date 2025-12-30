@@ -82,3 +82,5 @@ console.log( parseFloat("3.14"));// "3.14"-> 3.14
 console.log(String(100));        // 100 -> "100"
 console.log(100+"");            // 100 -> "100"
 console.log(Boolean("true"));    // "true" -> true
+
+
