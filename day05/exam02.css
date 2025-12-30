@@ -1,0 +1,27 @@
+
+*{border: solid 1px red;
+   margin: 20px;
+  }
+
+.span1{
+  display: inline; /* 표기 방법*/
+  width:  100px; height: 100px; /* inline은 사이즈 설정 불가능 */
+  /* 왼(오른)쪽 여백만 가능*/
+  margin: 50px; padding: 20px;
+}
+
+.span2{   
+  display: block;  /* span을 div처럼 사용하고 싶으면 display을 block 적용*/
+  width:  100px; height: 100px;   /* block은 사이즈 조절 가능*/
+  margin: 60px; padding: 60px;
+}
+
+.span3{
+  display: inline-block ; /* 한줄에 해당 구역을 포함 하면서 크기조절 가능*/
+  width: 100px; height: 100px; /* 사이즈 조절 가능 */
+  margin: 50px; padding: 50px;
+}
+
+.span4{
+  display: none; /* */
+}

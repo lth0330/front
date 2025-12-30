@@ -1,0 +1,35 @@
+
+.전체{
+  border-left: solid 3px blue;
+  padding-left: 50px;
+}
+.책{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  padding-top: 30px;
+
+}
+.숫자{
+ font-size: 40px;
+
+ color:orange;
+}
+
+.내용{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  padding: 20px;
+  background-color:forestgreen;
+  color: aliceblue;
+}
+
+.효과{
+  color: orange;
+}
+
+.제목{
+  font-weight: 500;
+  font-size: 30px;
+
+}
