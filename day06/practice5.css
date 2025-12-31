@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.큰틀{
+
+ flex-wrap: wrap;
+ flex-direction: column;
+ border-left: 3px solid skyblue;
+ padding: 30px;
+ border: 1px solid red;
+}
+.사진{
+  border: 1px solid #eeeeee;
+  box-sizing:border-box ;
+  width: 400px;
+}
+
+.box{
+  border: 1px solid #eeeeee;
+  box-sizing:border-box;
+  width: 400px;
+  padding: 10px
+}
+
+.title{ 
+  font-weight: 700;
+  font-size: 23px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.price{ 
+  font-weight: 800;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.효과{
+  color: orange;
+  font-weight: 700;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.content{
+    padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+.review{
+  display: flex;
+  width: 200px;
+ justify-content: flex-start;
+ font-size: 18px;
+}

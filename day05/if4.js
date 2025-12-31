@@ -142,7 +142,7 @@ else if ( a == 2 && b == 1){
 else{
   console.log(`플레이어 2 승리`)
 }
-*/
+
 
 // 문제 9. 주차 차량 위치 검색
 
@@ -150,6 +150,27 @@ let carArray = ['250어7142','142가415', '164주5994']
 let locationArray = ['A1', 'B3', 'C2'] 
 let usercar = prompt("사용자의 차번호")
 
+if(carArray.indexOf(usercar) == -1){
+  console.log(`차량이 존재하지 않습니다.`)
+} 
+else {
+ console.log(locationArray[(carArray.indexOf(usercar))])
+}
 
+*/
+
+//문제 10. 수강 신청 목록에서 과목 제외하기
+let cL = ['수학', '영어','과학','국어']
+let en = prompt(`제거할 과목 : `)
+let ch = cL.indexOf(en)
+
+
+if(ch==-1){
+  console.log(`해당 과목은 신청 목록에 없습니다.`)
+}
+else{
+  console.log(`신청 가능한 과목 : ${cL.splice(ch,1)}`)
+  console.log(cL)
+}
 
 

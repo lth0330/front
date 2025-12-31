@@ -1,0 +1,68 @@
+
+.box{
+  border : 1px solid red;
+  width: 100px;
+  padding: 10px;
+}
+.flexbox1{
+  display: flex; /* 본인 클래스가 적용되는게 아닌 자식 요소에 대해서 적용*/
+  border: 3px solid blue;
+  width: 200px;   
+  /*자동 설정인데도 최소값이 있는지*/
+  flex-wrap: nowrap; /*  nowrap : 하위요소가 칸이 넘치면 자동으로 하위 요소들 크기조정*/
+}
+
+.flexbox2{
+  border: 3px solid blue;
+  width: 330px;   
+  display: flex; 
+  flex-wrap: wrap;
+}
+
+.flexbox3{
+  border: 3px solid blue;
+  display: flex; 
+  flex-direction : row; /* 하위 요소 가로 배치*/
+}
+
+.flexbox4{
+  border: 3px solid blue;
+  display: flex; 
+  flex-direction : column; /* 하위 요소 세로 배치*/
+}
+
+.flexbox5{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: flex-start;  /*flew- start는 박스를 왼쪽에 배치 end는 왼쪽배치*/
+}
+
+.flexbox6{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: flex-end;  /*flew- start는 박스를 왼쪽에 배치 end는 왼쪽배치*/
+}
+
+.flexbox7{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: center;  /*center는 가운데 배치*/
+}
+
+.flexbox8{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: space-between;  /*space-between는 양끝에 배치후 안의 공간을 일정하게 배치*/
+}
+
+.flexbox9{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: space-around;  /*space-around는 만약 안쪽 사이여백의 크기가 100이면 양쪽여백의 끝을 50을 남기고 배치 */
+}
+
+.flexbox10{
+  border: 3px solid blue;
+  display: flex; 
+  justify-content: space-evenly;  /*space-evenly는 양쪽 여백과 사이여백의 넓이를 똑같이 배치 */
+}
