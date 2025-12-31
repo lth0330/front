@@ -1,0 +1,140 @@
+
+*{
+ 
+  text-align: center;
+
+}
+.바탕{
+  background-color: #eeeeee;
+  display: flex; 
+ flex-direction : column; 
+ align-items: center;
+ 
+}
+.시작{
+  background-color: #f0f2f5;
+  width: 500px;
+
+
+  
+}
+
+.이미지아래{
+  padding: 20px;
+  border: 1px solid #eeeeee;
+  box-shadow : 0px 1px 3px gray;
+  font-size: 20px;
+  border-radius: 10px;  
+ background-color: white;
+ display: flex;
+  width: 500px; 
+  flex-direction : column; 
+}
+
+.제목{
+  background-color: white;
+  border-bottom: 1px solid #eeeeee;
+  
+}
+.제목1{
+
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+.제목2{
+  font-size: 15px;
+  margin: 10px;
+  color: gray;
+
+  
+}
+
+.내용박스{
+  background-color: white;
+  width: 500px;
+
+}
+
+.이름박스{
+     display: flex; 
+  justify-content: space-between;
+  margin : 10px 0px;
+
+}
+.이름{
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  padding: 11px;
+  font-size: 15px;
+  width: 220px;
+
+}
+
+.기본글자{
+  color: gray;
+  text-align: left;
+  
+}
+.그림2{
+  height: 20px;
+}
+
+.성별{
+   display: flex;
+  justify-content: space-between;
+  box-sizing:border-box ; 
+  width: 500px; 
+  
+}
+.버튼{
+text-align: right;
+border-radius: 900px;
+}
+
+.성별박스{
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  text-align: left;
+  width: 120px;
+  padding: 4px;
+
+  font-size: 15px;
+  
+
+}
+ .연락수단{
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  padding: 10px;
+  text-align: left;
+  margin-top: 8px;
+  box-sizing:border-box ; 
+  width: 500px;
+ }
+
+ .약관{
+  color: gray;
+  font-size: 12px;
+  margin: 15px 0px;
+  text-align: left;
+  
+ }
+ 
+.가입하기{
+  background-color: #00a400;
+  border-radius: 5px;
+  color: white;
+ border: 0px;
+ width: 200px;
+ padding: 6px;
+ margin: 10px 0px;
+}
+.계정{
+  padding: 15px 0px;
+}
+a{ color: blue; text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+}
