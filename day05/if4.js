@@ -1,4 +1,4 @@
-/*
+
 // 문제 1 : 과일 목록 관리
 let fL = ['사과', '바나나']
 let nf = prompt("과일 이름 입력 : ")
@@ -150,14 +150,13 @@ let carArray = ['250어7142','142가415', '164주5994']
 let locationArray = ['A1', 'B3', 'C2'] 
 let usercar = prompt("사용자의 차번호")
 
+
 if(carArray.indexOf(usercar) == -1){
   console.log(`차량이 존재하지 않습니다.`)
 } 
 else {
  console.log(locationArray[(carArray.indexOf(usercar))])
 }
-
-*/
 
 //문제 10. 수강 신청 목록에서 과목 제외하기
 let cL = ['수학', '영어','과학','국어']
@@ -172,5 +171,3 @@ else{
   console.log(`신청 가능한 과목 : ${cL.splice(ch,1)}`)
   console.log(cL)
 }
-
-
