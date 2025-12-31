@@ -1,5 +1,53 @@
 
+.틀{
+ border-left: 3px solid rgb(0, 153, 255);
+}
+
 .바탕{
+  margin: 15px;
   background-color: pink;
+  text-align: center;
+  padding: 30px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ 
+}
+
+.title{
+  font-size: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  border: 3px solid white;
+  border-radius: 30px;
   
+}
+.사진 > img{
+  width: 300px;
+  height: 300px;
+  margin: 30px;
+  border-radius: 500px; 
+}
+
+
+.서브타이틀{
+  font-weight: 500;
+  margin: 20px;
+  margin-top: 0;
+  font-size: 20px;
+}
+.버튼{
+  margin: 10px;
+  background-color: #88ceeb;
+  border-radius: 15px;
+  padding: 20px;
+
+  
+}
+a{ color: white; text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
 }
