@@ -24,44 +24,102 @@ for(a = 0; a<=3 ;a++){
 주어진 배열을 for 반복문을 사용하여 
 역순으로 (마지막 요소부터 첫 요소 순서로) 출력하는 프로그램을 작성하시오.
 let numbers = [1, 2, 3, 4, 5];  출력 예시: 5 4 3 2 1  */
+/*
 let numbers = [1, 2, 3, 4, 5];
-let b = 0;
-for(b = 4; b=0; b--){
+
+for(let b = numbers.length - 1; b>=0; b--){
   console.log(numbers[b])
 }
-
+*/
 
 /*문제 4: 1부터 50까지의 합계 구하기
 for 반복문을 사용하여 1부터 50까지 모든 정수의 합을 구하여 콘솔에 출력하시오.*/
-
+/*
 let sum = 0;
-let c = 0;
-for(c = 1 ; c = 50; c++){
-  console.log(sum)
+for(let c = 1 ; c <= 50; c++){
+   sum = sum + c ;
 }
-
-
+  console.log(sum)
+*/
 
 
 /*문제 5: 짝수만 출력하기
 for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 짝수만 콘솔에 출력하시오.*/
+/*
+let d = 0;
+for(d = 1; d<=20; d++){
+  if(d % 2 == 0){
+    console.log(d);
+  }
+}
+*/
 
 /*문제 6: 배열 요소의 합계와 평균 구하기
 다음 학생들의 점수가 담긴 배열이 있습니다. for 반복문을 사용하여 모든 점수의 합계와 평균을 계산하여 콘솔에 출력하시오.
 let scores = [85, 92, 78, 65, 95]; */
+/*
+let scores = [85, 92, 78, 65, 95];
+let sum = 0;
+let e = 0;
+
+for(e = 0; e<= scores.length-1; e++){
+  sum = sum + scores[e];
+}
+console.log(sum)
+console.log(sum/e)
+*/
+
 
 /* 문제 7: 특정 조건에서 반복문 탈출하기 (break)
 점수 배열에서 100점 만점자가 처음 나타나면, 그 학생의 점수를 출력하고 반복문을 즉시 종료하는 프로그램을 작성하시오.
 let scores = [77, 82, 100, 54, 96];
 출력 예시: 100점 만점자를 찾았습니다!*/
 
+/*
+let scores = [77, 82, 100, 54, 96];
+let f = 0
+for(f= 0; f <= scores.length-1; f++){
+  console.log(scores[f]);
+
+  if(scores[f]=="100"){
+    console.log("100점 만점자를 찾았습니다.")
+    break ;
+  }
+}
+*/
+
+
+
 /*문제 8: 특정 조건 건너뛰기 (continue)
 점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.
 let scores = [90, 45, 72, 88, 59, 100];*/
 
+/*
+let scores = [90, 45, 72, 88, 59, 100]
+let g = 0;
+for( g = 0; g <= scores.length - 1;  g++){
+  if(scores[g] >= 60){
+
+    console.log(scores[g])
+  }
+}
+*/
+
 /*문제 9: 배열에서 특정 값의 개수 세기
 다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.
 let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
+/*
+let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
+let h = 0;
+let A = 0;
+for(h=0; h<=bloodTypes.length -1; h++){
+  if(bloodTypes[h]=="A"){
+    A = A + 1; 
+  }
+}
+console.log(`${A}명`)
+*/
+
 
 /*문제 10: 학생 점수 시각화하기 
 주어진 학생 이름과 점수 배열을 이용하여, 각 학생의 점수를 동그라미(●, ○)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
@@ -79,3 +137,30 @@ HTML에 학생 이름과 변환된 점수 시각화를 한 줄씩 출력합니�
 유재석 ●●●●●●●●●○
 강호동 ●●●●●●●●○○
 신동엽 ●●●●●●●○○○  */
+
+let nameArray = ['유재석', '강호동', '신동엽'];
+let scores = [92, 86, 72];
+let s = 0;
+let bl =0;
+let wr = 0;
+for(s = 0; s<=2; s++)
+  {    
+  if(scores[s]/10 !=0)
+    {
+    for(let ss = 1; ss <=scores[s]/10; ss++ )
+      {
+      bl +="●"
+      }
+    }
+    
+  if(scores[s]%10 != 0)
+    {
+    for(let sss = 1; sss <=scores[s]%10; sss++ )
+      {
+      wr +="○"
+      console.log("○")
+      }
+    }
+   document.querySelector(`h${s+1}`).innerHTML = (`${nameArray[s]} ${bl} ${wr}`)
+  }
+  
