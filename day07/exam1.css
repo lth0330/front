@@ -1,0 +1,29 @@
+*{
+  border: 1px solid red;
+  padding: 15px;
+}
+
+/* pc : 1000 ~ 1400px */
+/* 복수 선택자 : 선택자 A, 선택자 B*/
+#header, #main #footer{
+  width: 1280px;
+  margin: 0 auto ;
+}
+
+#main{
+  display: flex; /* 하위 요소들의 배치*/
+  flex-direction: row; /* 가로배치(기본값)*/
+  flex-wrap: nowrap; /* 줄바꿈처리 (기본값)*/
+  justify-content: space-between;
+}
+
+#content{ /* 높이는 내용물 만큼 자동크기*/
+  width: 830px /* 크기 : ㅔㅌ(픽셀/고정), %(비율/반응형)*/
+}
+
+#sidebar{
+  width: 420px ;
+}
+#footer{
+  background-color: gray;
+}

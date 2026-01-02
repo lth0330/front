@@ -1,4 +1,4 @@
-
+/*
 // 문제 1 : 과일 목록 관리
 let fL = ['사과', '바나나']
 let nf = prompt("과일 이름 입력 : ")
@@ -89,41 +89,30 @@ else if(y%400 ==0){
   console.log(`${y}년은 평년입니다.`)
    
  // 문제 7. 세 수 오름차순 정렬
- 
- let q = Number(prompt("첫번째 수 : "))
- let w = Number(prompt("두번째 수 : "))
- let e = Number(prompt("세번째 수 : "))
- let qwe = [q,w,e]
-  qwe.Maxnumber
-
- if(q < w < e){
-  console.log(`${q} ${w} ${e}`)
- }
- else if(q < e < w){
-  console.log(`${q} ${e} ${w}`)
- }
- else if(w < q < e){
-  console.log(`${w} ${q} ${e}`)
- }
- else if(w < e < q){
-  console.log(`${w} ${e} ${q}`)
- }
- else if(e < q < w){
-  console.log(`${e} ${q} ${w}`)
- }
- else if(e < w < q){
-  console.log(`${e} ${w} ${q}`)
- }
 
  
+// 방법 2
+let q =Number(prompt(" q input : "));
+let w =Number(prompt(" w input : "));
+let e =Number(prompt(" e input : ")); //변수명 = 값 <선언/만들기> , 변수명 값<수정>
+
+if( q > w) { let temp = q ; q=w ; w= temp} // 비교 1 만약 앞에 있는 값이 더 크면 값 스왑
+if( q > e) { let temp = q ; q=e ; e= temp} // 비교 2
+if( w > e) { let temp = w ; w=e ; e= temp} // *반복문* 이용하면 충분히 코드를 줄일 수 있음
+console.log(` ${q}, ${w}, ${e}`)
+ 
+*/
 // 문제 8. 가위바위보 게임
+
+
 let rsp = ["가위", "바위","보"]
 let p1 = prompt(" 플레이어 1 가위바위보 선택 : ")
 let p2 = prompt(" 플레이어 2 가위바위보 선택 : ")
 
 a = rsp.indexOf(p1);
 b = rsp.indexOf(p2);
-
+//방법 1 ----------------------------------------
+// 플레이어1 경우의 수 : 승리( 0 == 2 이거나 1 == 0 이거나 2 == 1 ) 무승부 (0 == 0 이거나 1 == 1 이거나 2 == 2) 패배(그외)
 if(a == -1 || b == -1){
   console.log(`다시 입력해주세요`)
 }
@@ -143,7 +132,18 @@ else{
   console.log(`플레이어 2 승리`)
 }
 
+// 방법 2 ------------------------------------------
+// 플레이어2 경우의 수 플레이어 1 == (플레이어2 +1) % 3 , 3(2+1) % 3 == 0 , 1(0+1) % 3 == 1 , 2(1+1) % 3 == 2
+if(a == (b + 1) %3 ){
+  console.log(`플레이어 1 승리`)
+}
+else if ( a == b){
+  console.log(`무승부`)
+}
+else{ console.log(`플레이어 1 패배`)}
 
+
+/*
 // 문제 9. 주차 차량 위치 검색
 
 let carArray = ['250어7142','142가415', '164주5994']
@@ -170,4 +170,4 @@ if(ch==-1){
 else{
   console.log(`신청 가능한 과목 : ${cL.splice(ch,1)}`)
   console.log(cL)
-}
+}*/
