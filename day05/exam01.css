@@ -47,13 +47,9 @@
   width: 100px;
   height: 100px;
   /* img 선택자로 직접 text-align 적용안됨*/
+  
 }
 .input{
   width: 50px;
   text-align: center;  /* */
-
-
-
-
-
 }

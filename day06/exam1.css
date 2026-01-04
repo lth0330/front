@@ -8,7 +8,6 @@
   display: flex; /* 본인 클래스가 적용되는게 아닌 자식 요소에 대해서 적용*/
   border: 3px solid blue;
   width: 200px;   
-  /*자동 설정인데도 최소값이 있는지*/
   flex-wrap: nowrap; /*  nowrap : 하위요소가 칸이 넘치면 자동으로 하위 요소들 크기조정*/
 }
 

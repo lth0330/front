@@ -1,5 +1,4 @@
  *{
-
   box-sizing: content-box;
   font-size: 12px;
   padding: 0px; margin: 0px;
@@ -58,6 +57,7 @@ li{
 #sidebar{
   padding: 15px;
 }
+
 #left-sidebar > li{
  width: 220px;
  padding: 10px ;
@@ -80,8 +80,6 @@ li{
   border-bottom: 1px solid #eeeeee;
   margin: 10px 0px;
   font-size: 15px;
-
-
 }
 
 #top-content2{

@@ -1,4 +1,4 @@
-/*
+
 // 문제 1 : 과일 목록 관리
 let fL = ['사과', '바나나']
 let nf = prompt("과일 이름 입력 : ")
@@ -17,7 +17,6 @@ let ID = prompt("주민등록번호 입력(13자리) :")
 if(ID.length-6 ){
 
 }
-
 
 // 문제 3. 구매 금액에 따른 할인율 적용
 
@@ -39,7 +38,6 @@ else{ console.log(`최종 금액 : ${tm}`)}
 
 
 // 문제 4. 월에 따른 계절 판별
-
 let month = prompt("월(1~12) 입력 : ")
 
 if(month >= 3 && month <=5){
@@ -58,7 +56,6 @@ else{console.log(`잘못된 월입니다. 다시 입력하세요`)}
 
 
 // 문제 5. 세 수 중 가장 큰 수 찾기
-
 let a = Number(prompt("첫 번째 수 입력 : "))
 let b = Number(prompt("두 번째 수 입력 : "))
 let c = Number(prompt("세 번째 수 입력 : "))
@@ -89,9 +86,6 @@ else if(y%400 ==0){
   console.log(`${y}년은 평년입니다.`)
    
  // 문제 7. 세 수 오름차순 정렬
-
- 
-// 방법 2
 let q =Number(prompt(" q input : "));
 let w =Number(prompt(" w input : "));
 let e =Number(prompt(" e input : ")); //변수명 = 값 <선언/만들기> , 변수명 값<수정>
@@ -101,10 +95,8 @@ if( q > e) { let temp = q ; q=e ; e= temp} // 비교 2
 if( w > e) { let temp = w ; w=e ; e= temp} // *반복문* 이용하면 충분히 코드를 줄일 수 있음
 console.log(` ${q}, ${w}, ${e}`)
  
-*/
+
 // 문제 8. 가위바위보 게임
-
-
 let rsp = ["가위", "바위","보"]
 let p1 = prompt(" 플레이어 1 가위바위보 선택 : ")
 let p2 = prompt(" 플레이어 2 가위바위보 선택 : ")
@@ -143,9 +135,8 @@ else if ( a == b){
 else{ console.log(`플레이어 1 패배`)}
 
 
-/*
-// 문제 9. 주차 차량 위치 검색
 
+// 문제 9. 주차 차량 위치 검색
 let carArray = ['250어7142','142가415', '164주5994']
 let locationArray = ['A1', 'B3', 'C2'] 
 let usercar = prompt("사용자의 차번호")
@@ -170,4 +161,4 @@ if(ch==-1){
 else{
   console.log(`신청 가능한 과목 : ${cL.splice(ch,1)}`)
   console.log(cL)
-}*/
+}

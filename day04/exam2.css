@@ -1,7 +1,7 @@
 
 .title{
-  font-family: "맑은 고딕","굴림";
-  font-size: 40px;
+  font-family: "맑은 고딕","굴림"; /*폰트*/
+  font-size: 40px;    /*글씨 크기*/
   font-weight: bold;  /*글꼴 진하게*/
   font-style: italic; /*글꼴 기울기*/
 
