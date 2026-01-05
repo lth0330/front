@@ -160,8 +160,6 @@ li > a{
 
 }
 
-
-
 li{
   display: flex;
   list-style-type : none; /* 목록 글머리 제거*/

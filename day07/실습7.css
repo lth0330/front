@@ -1,9 +1,10 @@
 *{
-  border: 1px solid red;
-  padding: 10px;
+
+  margin: 0px; padding: 0px;
   box-sizing: content-box;
   font-size: 12px;
   font-family: 굴림 나눔고딕;
+  
 }
 
 a{ /* a마크업 기본 css 제거*/
@@ -11,6 +12,9 @@ a{ /* a마크업 기본 css 제거*/
   color: black;
 }
 
+h3{
+  font-size: 14px;
+}
 li{
   list-style-type : none; /* 목록 글머리 제거*/
 }
@@ -18,27 +22,174 @@ li{
 .header{
   display: flex;
    justify-content: space-between;
-   width: 1280px
+   width: 900px;
+   margin-left: 520px;
 }
 
 .left-header{
   display: flex;
   flex-direction: column;
   width: 200px;
+  padding: 20px;
 }
 
 .right-header{
   display: flex;
   flex-direction: column;
+  text-align: left;
   width: 500px;
 }
 
 .개인정보{
     display: flex;
-  flex-direction: row;
+    justify-content: flex-end;
 }
 
 .메뉴{
     display: flex;
+   justify-content: flex-end;
+   
+}
+
+.메뉴 li a{
+    font-size: 20px;
+    
+}
+.메뉴 li {
+  padding-left: 40px;
+
+    
+}
+.main{
+  display: flex;
+  margin-left: 530px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.sidebar{
+  width: 280px;
+}
+.sidebar h3{
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 5px;
+}
+.side1 h3{
+  background-color: mediumaquamarine;
+  color: aliceblue;
+  font-size: 15px;
+  margin: 0px;
+  padding: 8px;
+}
+input {
+  border-radius: 5px;
+  width: 150px;
+}
+.side2 ol {
+   line-height: 200%
+}
+
+.side3 ol {
+   line-height: 200%
+}
+
+
+.side2{
+  border-top: 2px solid black;
+  margin: 20px 0px;
+  padding-top: 5px;
+
+}
+
+.side3{
+  border-top: 2px solid black;
+   padding-top: 5px;
+}
+
+.content{
+  width: 500px;
+  margin-left: 30px;
+}
+
+.content1{
+  margin-bottom: 50px;
+}
+
+
+.content1 h3{
+  border-bottom: 2px solid black;
+   padding-bottom: 10px;
+}
+.content li{
+  display: flex;
+  justify-content: space-between;
+}
+.content1 ol{
+    
+   line-height: 200%;
+   
+}
+.content2 ol{
+   line-height: 200%;
+}
+
+.content2 h3{
+  border-bottom: 2px solid black;
+   padding-bottom: 10px;
+   }
+
+.사진{
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+
+.사진 h3{
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+.제빵사진공간{
+  width: 450px;
+    display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.제빵사진{
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.footer{
+  width: 900px;
+  padding-left: 530px;
+  padding-right: 700px;
+  background-color: #05344e;
+  color: aliceblue;
+  
+}
+
+.footer-top{
+padding: 15px 0px;
+}
+
+.footer-top ol{
+  width: 500px;
+    display: flex;
   flex-direction: row;
+  
+}
+
+.footer-top ol li{
+  padding-right: 20px;
+}
+.footer-top ol a{
+    color: aliceblue;
+}
+.footer-bottom{
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+   line-height: 100%;
+   margin-top: 10px;
+  
 }
