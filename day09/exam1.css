@@ -1,0 +1,49 @@
+
+.box{ width: 100px; height: 100px;
+      background-color: yellowgreen;
+      border: 1px solid red;
+}
+
+.box2{ /* HTML 작성 순서대로 배치, 위치 변경불가*/
+  position: static;  /* 포지션 기본값(생략가능)*/
+  left : 50px /* 위치 이동 불가능함*/
+}
+
+.box3{ /* relative : 본래 위치로 부터 상대 위치, 위치 변경 가능*/
+  position: relative ;
+  top : 10px; left: 10px;
+}
+
+.box4{ /* absolute : 가장 가까운 상위 요소의 position을 기준 절대위치*/
+  position: absolute; /* 상위 요소가 없으면 body 기준으로 이동*/
+  top: 10px; left: 200px;    /*원래 존재했던 자리를 버리고 이동*/ /* 왼쪽으로부터 200px 위쪽으로부터 20px 이동*/
+}
+
+.box5{/* fixed : 디바이스(크롭)의 화면 위치고정*/
+  position: fixed;
+  right: 50px; bottom: 50px /* 오른쪽부터 50px, 아래에서부터 50px 이동*/;
+}
+
+.parent{
+  position: relative;
+    border: 1px solid blue;
+}
+
+.box6{ /* 상위 요소(parent)을 기준으로 위치 이동*/
+  position: absolute; /* */
+  top: 30px;
+  left: 80px;
+}
+
+
+.header{
+  display: flex;
+  background-color:  beige;
+  position: sticky;/* 만일 화면에서 벗어나면 위치고정 가능*/
+  top: 0px;
+  z-index: 5;
+}
+
+.header > ul{
+  display: flex;
+}

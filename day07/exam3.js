@@ -1,3 +1,4 @@
+/*
 //문제 1: 1부터 10까지 출력하기
 //for 반복문을 사용하여 1부터 10까지의 숫자를 콘솔에 순서대로 
 //출력하는 프로그램을 작성하시오.
@@ -29,7 +30,7 @@ for(let b = numbers.length - 1; b>=0; b--){
 
 
 //문제 4: 1부터 50까지의 합계 구하기
-//for 반복문을 사용하여 1부터 50까지 모든 정수의 합을 구하여 콘솔에 출력하시오.*/
+//for 반복문을 사용하여 1부터 50까지 모든 정수의 합을 구하여 콘솔에 출력하시오.
 let sum = 0;
 for(let c = 1 ; c <= 50; c++){
    sum = sum + c ;
@@ -38,7 +39,7 @@ for(let c = 1 ; c <= 50; c++){
 
 
 //문제 5: 짝수만 출력하기
-//for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 짝수만 콘솔에 출력하시오.*/
+//for 반복문과 if 조건문을 사용하여, 1부터 20까지의 숫자 중 짝수만 콘솔에 출력하시오.
 let d = 0;
 for(d = 1; d<=20; d++){
   if(d % 2 == 0){
@@ -77,7 +78,7 @@ for(f= 0; f <= scores.length-1; f++){
 
 //문제 8: 특정 조건 건너뛰기 (continue)
 //점수 배열에서 60점 미만(과락)인 점수는 건너뛰고, 60점 이상인 점수만 콘솔에 출력하는 프로그램을 작성하시오.
-//let scores = [90, 45, 72, 88, 59, 100];*/
+//let scores = [90, 45, 72, 88, 59, 100];
 
 let scores = [90, 45, 72, 88, 59, 100]
 let g = 0;
@@ -91,7 +92,7 @@ for( g = 0; g <= scores.length - 1;  g++){
 
 //문제 9: 배열에서 특정 값의 개수 세기
 //다음 배열에서 'A'형 혈액형을 가진 사람이 몇 명인지 for 반복문을 통해 세고, 그 수를 콘솔에 출력하시오.
-//let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; */
+//let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A']; 
 let bloodTypes = ['A', 'B', 'O', 'AB', 'A', 'B', 'A'];
 let h = 0;
 let A = 0;
@@ -101,7 +102,7 @@ for(h=0; h<=bloodTypes.length -1; h++){
   }
 }
 console.log(`${A}명`)
-
+*/
 //문제 10: 학생 점수 시각화하기 
 //주어진 학생 이름과 점수 배열을 이용하여, 각 학생의 점수를 동그라미(●, ○)로 시각화하여 HTML에 출력하는 프로그램을 작성하시오.
 //(1). 초기 데이터
@@ -129,9 +130,10 @@ for(s = 0; s<=2; s++)
     {
     for(let ss = 1; ss <=scores[s]/10; ss++ )
       {
-      bl +="●"
+      
+      console.log("●")
       }
-      console.log(bl)
+      bl +="●"
     }
     
   if(scores[s]%10 != 0)
@@ -141,6 +143,10 @@ for(s = 0; s<=2; s++)
       wr +="○"
       console.log("○")
       }
-    }
-   document.querySelector(`h${s+1}`).innerHTML = (`${nameArray[s]} ${bl} ${wr}`)
+   } 
+ 
   }
+
+  let html = ''
+  html +=nameArray[index]
+  document.write(html);

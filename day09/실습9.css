@@ -1,0 +1,63 @@
+.main{
+  background-color: red;
+  width: 800px;
+  height: 500px;
+  margin-left: 500px;
+  margin-top: 200px;
+  position: relative;
+}
+
+.강좌{
+ background-color: yellow;
+ width: 100px;
+ height: 50px;
+ border-radius: 10px;
+ padding : 10px 0px;
+ text-align: center;
+
+}
+
+.상자1{
+  position: absolute;
+  top: 40px;
+  left: 350px;
+
+
+}
+
+.상자2{
+  position: absolute;
+  left: 150px;
+  top: 150px;
+ }
+
+
+.상자3{
+  position: absolute;
+  right: 150px;
+  top: 150px;
+;
+}
+
+.상자4{
+  position: absolute;
+  left: 150px;
+  top: 300px;
+;
+}
+
+.상자5{
+  position: absolute;
+  right: 150px;
+  top: 300px;
+
+}
+
+.상자6{
+  position: absolute;
+  bottom: 40px;
+  left: 350px;
+
+}
+
+
