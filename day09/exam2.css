@@ -1,0 +1,43 @@
+
+a{
+  text-decoration: none; /* 밑줄제거 */
+  color: black;
+}
+
+/* [1] 선택자 :hover 만일 요소에 마우스를 올렸을 때 */
+a:hover{ color: red; font-size: 20px;}
+
+/* [2] 선택자 :visitd 만일 브라우더(코롬) 내 방문한 적이 있는 링크일때 */
+a:visited{ color: blue; font-size: 10px;}
+
+/* [3] 선택자 :active 클릭하고 있을때 변경*/
+a:active{ color: yellow; font-size: 30px;}
+
+
+/* [4] 선택자 ::before   html에는 존재하지않지만 가상(가짜)의 요소(content) 추가*/
+.box1::before{
+  content:"[가상요소 before구역]";
+  color: aqua;
+}
+
+/* [5] 선택자 ::after  html에는 존재하지않지만 가상(가짜)의 요소(content) 추가*/
+
+.box1::after{
+  content:"[가상요소 before구역]";
+  color: brown;
+}
+
+/* 선택자 ::before, ::after 
+ 활용[1] : 글머리  */
+li{ list-style-type: none;}
+
+.box2 > li::before{content:"🙂";
+  color: green; }
+/*활용[2]*/
+.box2 > li::after{content: url("../day06/짱구.png"); }
+
+
+/*[6] 선택자::cuenth-of-type(순서번호) = 하위 요소들이 여러개일때 번호로 선택하기*/
+.box2 > li:nth-of-type(1){
+  color: red;
+}

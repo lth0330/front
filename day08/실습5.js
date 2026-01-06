@@ -50,7 +50,7 @@ for(i5 = 0; i5 <=numbers2.length-1; i5++){
     
   }
 }console.log(newAry)
-*/
+
 // 문제 6번 버블 정렬 구현하기    인접한 인덱스끼리 비교하여 올림차순 또는 내림차순으로 배열을 만든다.
 let numbers3=[5,3,4,1,2];
 
@@ -63,6 +63,103 @@ for(let s = 0; s<numbers3.length-1; s++){
     }
   }
 } console.log(numbers3)
+
+
+// 문제 7 : 재고 관리 시스템
+let products=['볼펜','노트',' 지우개'];
+let stock=[10,5,20];
+let name = prompt("제품명 : ")
+let find = -1 //찾은 인덱스 없으면 -1
+for( let i = 0; i<products.length-1; i++){
+  if(products[i]==name){
+    find = i
+   break;
+  }
+} 
+
+
+if(find == -1){
+  console.log(`없는 제품명입니다.`)
+}
+else{
+  let count = Number(prompt("수량"));
+  if(stock[find] >=count)
+  {
+    console.log(`구매완료!`)
+  }
+  else{
+    console.log("재고가 부족합니다.")
+  }
+}
+
+
+// 문제 8번
+let movienames =['히든페이스','위키드','글래디에이터2','창설']
+let movieratings=[8,4,7,6]
+// 순회 : 첫인덱스부터 마지막 인덱스까지
+//누적합계 (변수+= 새로운값), (변수 = 변수 + 새로운값)
+let html = ''
+for(let index = 0; index<= movienames.length-1; index++){
+  let movie = movienames[index];
+  html +=`<div>${movie}`
+
+  let rating = movieratings[index]
+  for(let r= 0; r<=10; r++){
+      if(rating >= r){html +=`<span> ●<span>`}
+      else{html +=`<span> ○<span>`}
+  }
+  html+=`</div>`
+}
+document.write(html);
+
+// 문제 9번 : 좌석 예약 상태 표시하기
+
+let seatStatus = ['빈좌석', '예약석','예약석', '빈좌석', '예약석', '빈좌석']
+let html9 =``;
+for( let sS = 0; sS <= seatStatus.length-1; sS++){
+  html9 += `<span style=" color : ${seatStatus[sS]=="빈좌석"? "bule" : "red"};">
+  ${seatStatus[sS]}
+  </span>
+  `;
+}
+document.write(html9)
+
+
+
+// 문제 10 : 주차 요금 정산하기
+let carNumbers=["201어7125", "142가7414","888호8888","164주5994"];
+let useMinutes=[65,30,140,420];
+
+let html10=``;
+for(index =0; index <= carNumbers.length-1; index++){
+  let number = carNumbers[index];
+  html10 += `<div> <span> ${number}</span>`;
+
+  let min = useMinutes[index];
+  html10+=`<span> ${min}분 주차 </span>`
+
+  let money = 0;
+  if(min <=30){ money = 1000;}
+  else{ 
+    money = parseInt((min -30)/10)*500 + 1000;
+  }
+  if(money>20000){ money =20000}
+  html10+=`<span> ${money.toLocaleString()}원 </span>`
+    html10 +=`</div>`
+}
+//toLocaleString() = 천단위 기호 (,)
+document.write(html10);
+
+*/
+
+
+
+
+
+
+
+
+
 
 
 
