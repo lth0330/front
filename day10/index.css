@@ -1,64 +1,86 @@
 
 *{
-
   padding: 0px;
   margin: 0px;
-
 font-size: 12px;
 }
+
 a{
   text-decoration-line: none;
   color: black;
 }
-
-li{
-  list-style-type : none; 
-  padding-left: 20px;
-}
+li{list-style-type : none; }
 
 .header{
-  display: flex;
-  width: 1680px;
-  position: relative;
+display: contents;
+background-color: white;
+
+  
 }
 
 .header1 > ul{
   display: flex;
   justify-content: end;
-    width: 1640px;
+  margin: 15px;
 }
+
+.header1 >ul >li{padding-left: 40px;}
 
 
 .header2{
   display: flex;
   justify-content: space-between;
-
+  border-top: 1px solid gray;
+  position: sticky;
+  top: 5px;
+  background-color: white;
 }
 
-.header2 > ul{
+.header2 > ul
+{
   display: flex;
+  padding: 20px;
+}
 
+.header2 >ul >li{
+    padding-left: 50px;
 }
 
 .검색{
-  text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
+.검색 > div
+{
+  display: flex;
+  border-bottom: 1px solid black;
+}
 
+input{border: 0px;}
 ul > li > a:hover{
   color: red;
 }
 
+
 .main1-1{
-  width: 1680px;
+
+  
 } 
 .main1-1 > img{
   width: 100%;
 }
-.main2 > ul {
+.main2{
   text-align: center;
   margin: 40px 0px;
+}
+
+.main2 > h3{
+  font-size: 20px;
+
+}
+
+.main2 > li{
+  color: gray;
 }
 
 .main3{
@@ -71,19 +93,37 @@ ul > li > a:hover{
   font-size: 10px;
 }
 
-
 .rv4{
+  display: flex;
+  justify-content: space-between;
+}
+
+.가격{
   color: gray;
   text-decoration: line-through;
+}
+
+.할인가격{
+
+  color: red;
+  font-weight: bold;
 }
 .main4{
   display: flex;
     justify-content: center;
 }
 
+.review{
+  display: flex;
+  justify-content: space-between;
+}
+
+.review2{
+  color: gray;
+}
 .goods{
   padding: 20px;
-  width: 300px;
+  width: 370px;
 }
 .goods > img{
   width: 100%;
@@ -103,4 +143,24 @@ ul > li > a:hover{
 .footer2{
   color: gray;
   text-align: center;
+}
+
+.popup{
+  position: fixed;
+  top: 400px;
+  right: 10px;
+ 
+}
+
+.popup1{
+   background-color: #eeeeee;
+   margin: 2px;
+   width: 30px;
+   display: flex;
+   justify-content: center;
+     padding: 10px;
+}
+.popup1 > img{
+  width: 80%;
+
 }
