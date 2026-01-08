@@ -1,0 +1,27 @@
+body{
+  display: flex;
+
+}
+.imgBox{ 
+  width: 300px; height: 300px;
+  border: 1px solid red;
+  margin: 20px;
+}
+/* [1]만일 사진의 크기가 부모요소 크기보다 커지면 사이즈 설정*/
+.imgBox > img{ width: 100%; height: 100%;}
+
+/*[2] fill : (기본값)영역채움, 비율 무시*/
+.img1{object-fit:fill ;}
+
+/* [3] contain : 전체영역이 보이도록 비율 유지, 일부 여백이 존재할 수도 있다.`*/
+.img2{object-fit:contain ;}
+
+/* [4] cover : 영역채우면서 비율 유지, 일부짤림이 존재할수 있음*/
+.img3{ object-fit: cover;}
+
+/* [5] none: 이미지 사이즈 조정 없이 그래로 출력, 일부 짤림/여백 존재할 수 있음*/
+.img4{ object-fit: none;}
+
+/* [6] object-positon : 짤릴 위치 설정 가능*/
+.img5{ object-fit:cover; object-position: left ;} /* 오른쪽 짤림*/
+.img6{ object-fit:cover; object-position: left ;}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="css실습1.css">
+</head>
+<body>
+  
+  <table class="basicTable"> <!-- 전체 표를 감싼-->
+    <tr> <!-- 테이블 행-->
+      <th> 번호</th><th>이름</th> <th>국어</th><!-- 테이블 헤더/제목 -->
+      <th>수학</th> <th>영어</th> <th>평균</th>
+    </tr>
+    <tr>
+      <th>1</th><th>이태형</th><th>90</th>
+      <th>100</th> <th> 80</th> <th>90</th>
+    </tr>
+    <tr>
+      <th>2</th><th>111</th><th>90</th>
+      <th>100</th> <th> 80</th> <th>90</th>
+    </tr>
+    <tr>
+      <th>3</th><th>222</th><th>90</th>
+      <th>100</th> <th> 80</th> <th>90</th>
+    </tr>
+    <tr>
+      <td colspan="2"> 총 응시 인원</td>
+      <td colspan="4"> 3명 </td>
+    </tr>
+  </table>
+
+  <table class="styleTable">
+    <thead><!-- 테이블 제목 구역 : 가독성때문에 씀 -->
+      <tr>
+        <th> 월</th><th> 제품 A</th>
+        <th> 제품 B</th><th> 제품C </th><th>총계</th>
+      </tr>
+    </thead>
+    <tbody> <!-- 테이블 내용 구역 : 본문 -->
+      <tr>
+        <th> 1월</th><th> 170</th>
+        <th> 100</th><th> 130 </th><th>400</th>
+      </tr>
+      <tr>
+        <th> 2월</th><th>170</th>
+        <th>130</th><th>200</th><th>500</th>
+      </tr>
+      <tr>
+        <th> 3월</th><th> 20</th>
+        <th> 50</th><th> 30 </th><th>100</th>
+      </tr>      
+    </tbody>
+    <tfoot> <!-- 테이블 하단 구역 : 푸터 -->
+      <tr>
+        <th> 합계</th><th> 600</th>
+        <th> 700</th><th> 800</th><th>2100</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

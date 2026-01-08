@@ -1,0 +1,34 @@
+.basicTable{
+  width: 500px;
+  border: 1px solid black;
+}
+
+.basicTable th, .basicTable th{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+
+  /*형제 선택자*/
+.basicTable th:nth-child(1){ background-color: aquamarine;}
+.basicTable th:nth-child(2){text-align: center;}
+
+/*속성 선택자 : 산택자[속성명]*/
+.basicTable th[colspan]{text-align: right;}
+
+.styleTable{
+  width: 500px;
+  border-collapse: collapse;
+}
+
+.styleTable th, .styleTable tr{
+  border: 2px solid black;
+}
+
+.styleTable > tbody > tr:nth-child(odd){
+  background-color: #eeeeee;
+}
+
+.styleTable > tbody > tr:hover{
+  background-color: gray;
+}
