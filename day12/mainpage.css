@@ -167,9 +167,7 @@ padding: 10px 0px;
   text-align: left;
 }
 
-.pic2 >div > img{
-  object-fit:cover; object-position: left;??
-}
+
 
 
 /* 푸터 ----------------------------------*/
