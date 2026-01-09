@@ -76,103 +76,54 @@ width: 100%;
 padding: 10px 0px;
 }
 
-/* 메인 1 --------------------------*/
- .main{
-    position: relative;
-    z-index: 2;
+/*여기서부터 원래 giftlist file*/
+#main{
+    padding: 15px;
+    width: 414px;
 }
-.main{
-  display: flex;
-  z-index: 2;
-
+.top{   
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        align-items: center;
+        text-align: center;
 }
-.main > a{
-  background-color: white;
-  position: relative;
+.top > img{ width: 25px; height: 25px;  }
 
+.searchField{
+    width: 100%;
+    border: 1px solid lightgray;
+    display: flex;
+    border-radius: 25px;
+    height: 40px;
 }
-
-
-.main > ul{
-  padding: 22px 0px;
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  z-index: 2;
-  width: 100%;
-}
-.main > ul > li{
-  padding: 0px 22.8px;
-  text-align: center;
-  z-index: 2;
+.searchField > input { 
+    border: none; width: 250px;
+    outline: none;
+    padding-left: 15px;
 }
 
-.main > ul > li > a >p{    font-family: "Pretendard";
-
+.searchField>a>img{
+    width: 30px; height: 30px;}
+.searchField>a{
+    width: 80px;
+    text-align: center;
+    background-color: rgb(230, 228, 228);
+    border-radius: 25px;
+    padding-block: 3px;
+    }
+.empty{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center; gap: 10px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    border-bottom: 1px solid rgb(230, 228, 228);
 }
-/* 메인 2 --------------------------*/
-.main2{
-  padding: 22px 0px;
-  background-color: #f4f4f4;
-  z-index: 2;
-  position: relative;
-}
-
-.main2 > h2{
-  display: flex;
-  justify-content: space-between;
-  width: 380px;
-  padding: 0px 10px;
-  
-}
-
-.main2 > h2> div{
-  background-color: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  
-}
-.main2 > h2> div >button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.review{
-  display: flex;
-}
-
-.pic1{
-  padding: 10px;
-  padding-top: 15px;
-
-}
-.pic2{
-  padding: 10px;
-  padding-top: 15px;
-}
-
-.pic1 > div > a> img {
-    border-radius: 10px;
-}
-.pic2 > div > a> img {
-    border-radius: 10px 0px 0px 10px;
-}
-
-.pic1 > div > div >p{
-  text-align: left;
-}
-.pic2 > div > div >p{
-  text-align: left;
-}
-
-.pic2 >div > img{
-  object-fit:cover; object-position: left;??
-}
-
-
-/* 푸터 ----------------------------------*/
+.empty > img{ width: 180px; height: 180px;}
+/*여기까지 원래 GiftList*/
 .footer{
   background-color: white;
   margin-bottom: 10px;
@@ -268,7 +219,6 @@ span{
   padding: 90px 0px 0px 30px;
   width: 300px;
   height: 832px;
-  
 }
 
 .right1{ 
