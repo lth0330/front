@@ -51,6 +51,7 @@ width: 100%;
 .content{
   background-color: white;
   text-align: center;
+
   
 }
 /* 헤더 */
@@ -76,19 +77,29 @@ padding: 10px 0px;
 }
 
 /* 메인 1 */
+.main0{
+    display: flex;
+    z-index: 2;
+}
+.main{
+  display: flex;
+  z-index: 2;
 
+}
 .main > a{
   background-color: white;
-   z-index: 2;
-    position: relative;
+  position: relative;
+
 }
-.main0{ z-index: 2;}
-.main{z-index: 2;}
+
+
 .main > ul{
   padding: 22px 0px;
   display: flex;
-    justify-content: center;
-z-index: 2;
+  justify-content: center;
+  background-color: white;
+  z-index: 2;
+  width: 100%;
 }
 .main > ul > li{
   padding: 0px 22.8px;
@@ -197,7 +208,7 @@ span{
   position: sticky;
   bottom: 0px;
   background-color: white;
-  margin-bottom: 10px;
+  margin-bottom: -10px;
 }
 .footer_bottom_img{
   display: flex;
