@@ -81,9 +81,9 @@ padding: 10px 0px;
     position: relative;
     z-index: 2;
 }
-.main{
-  display: flex;
+.main0{
   z-index: 2;
+  position: relative;
 
 }
 .main > a{
@@ -167,7 +167,9 @@ padding: 10px 0px;
   text-align: left;
 }
 
+.pic2 >div > img{
 
+}
 
 
 /* 푸터 ----------------------------------*/
