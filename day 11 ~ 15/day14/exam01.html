@@ -6,8 +6,49 @@
   <title>Page Title</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+  <style>
+    .dark-mode{
+      background-color: black;
+      color : white;
+    }
+  </style>
 </head>
 <body>
+  <h1 id="title">1</h1>
+
+  <input id="usernameInput" />
+  <button id ="submitBtn"onclick="func2()">버튼2</button>
+  <p id="greeting"></p>
+
+  <button id="styleBtn" onclick="func3()"> 스타일버튼3</button>
+  <div id="colorBox"> 배경</div>
+  
+  <button id="themeBth" onclick="func4()"> 테마버튼4 </button>
+
+  <button id="removeBth" onclick="func5()">박스 삭제</button>
+  <div id="targeBox">박스</div>
+
+  <p class="item"> 글자폰트1 </p>
+  <p class="item"> 글자폰트2 </p>
+  <p class="item"> 글자폰트3 </p>
+
+  <button id="chageImgBth" onclick="func7()"> 이미지</button>
+  <img src="https://placehold.co/ "   id="mainImage"/>
+
+  <select id="foodSelect" 
+          onchange="func8()">
+    <option> 떡볶이</option>
+    <option> 김밥</option>
+    <option> 순대</option>
+
+  </select>
+
+  <input id="productInput"/>
+  <button onclick="func9()">등록</button>
+  <div id="productPrint"></div>
+
+
+
   <script src="exam01.js"></script>
 </body>
 </html>
