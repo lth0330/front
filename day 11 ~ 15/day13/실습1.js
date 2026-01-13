@@ -89,7 +89,7 @@ const products = [
 
 function renderProducts(){
   let html=``; // 구성한 문자열 저장하는 매열
-  for(let index =0; index <= renderProducts.length-1; index++){
+  for(let index =0; index <= products.length-1; index++){
     let prod = products[index];
     html += `<div>
              <h4> ${prod.name} </h4>
@@ -142,3 +142,17 @@ renderList()
 8세 이상 19세 이하: "5,000원"
 20세 이상: "10,000원"
 계산된 가격 문자열을 반환(return)하시오.*/
+let st = ""
+function getTicketPrice(age){
+  if(age < 8 ){
+   st = "무료";
+  }
+  else if(age <=19){
+   st = "5,000원";
+  }
+  else if(age >= 20){
+    st = "10,000원";
+  }
+  return st
+}
+console.log(getTicketPrice(50))
