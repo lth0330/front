@@ -17,39 +17,25 @@
       <li>부서, 사원, 휴가 통합 관리 시스템</li>
       <div class="main1">
         <div class="left">
-          <div class="left-top">
-            <h3>부서 관리</h3>
-          </div>
-          <div class="left-center">
-            <input placeholder="신규 부서명 입력" />
-            <button onclick="func1()">추가</button>
-          </div>
-          <div class="left-bottom">
-            <table>
-              <thead class="title">
-                <tr>
-                  <th>부서명</th>
-                  <th>관리</th>
-                </tr>
-              </thead>
-              <tbody id="a">
-                <tr>
-                  <td>개발팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td>
-                </tr>
-                <tr>
-                  <td>디자인팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td>
-                </tr>
-                <tr>
-                  <td>기획팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth" onclick="func3()">삭제</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-        <div class="center">
+         <div class="left-top"><h3>부서 관리</h3></div>
+         <div class="left-center">
+          <input placeholder="신규 부서명 입력"/>
+          <button onclick="func1()">추가</button>
+         </div>
+         <div class="left-bottom">
+          <table>
+            <thead>
+              <tr><th>부서명</th><th>관리</th></tr>
+            </thead>
+            <tbody id="a">
+              <tr><td>개발팀</td><td><button onclick="func2()">수정</button><button onclick="func3()">삭제</button></td></tr>
+              <tr><td>디자인팀</td><td><button onclick="func2()">수정</button><button onclick="func3()">삭제</button></td></tr>
+              <tr><td>기획팀</td><td><button onclick="func2()">수정</button><button onclick="func3()">삭제</button></td></tr>
+            </tbody>
+          </table>
+         </div>
+       </div>
+       <div class="center">
           <h3>사원 등록</h3>
           <div class="center-top">
             <div class="name">
