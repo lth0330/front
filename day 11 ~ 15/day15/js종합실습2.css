@@ -10,7 +10,7 @@ li{ list-style-type : none; }
 
 
 /* 헤더 */
-.wrap{background-color: #eeeeee; width: 1680px;}
+.wrap{background-color: #eeeeee; width: 1720px;}
 .header{ text-align: center;}
 .main1{display: flex; }
 
@@ -80,11 +80,11 @@ li{ list-style-type : none; }
 }
 
 .center-top > div{
-  width: 400px;
+  width: 380px;
 }
 
 .center-top > div >input{
-  width: 400px;
+  width: 380px;
 }
 
 .center-center1{
@@ -92,7 +92,7 @@ li{ list-style-type : none; }
 }
 
 .center-center1 > div{
-  width: 400px;
+  width: 380px;
 }
 
 .center-center2{
@@ -105,9 +105,7 @@ li{ list-style-type : none; }
   border-radius: 5px;
 }
 
-.center-bottom{
-  
-}
+
 .table2{
     
     margin: 0px auto;
