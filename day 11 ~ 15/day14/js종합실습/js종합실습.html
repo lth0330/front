@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel="stylesheet" href="js종합실습.css">
+</head>
+<body>
+
+  <div id="header">
+    <select id="category">
+      <option value="disabled"> 카테고리 선택하세요.</option>
+      <option >음료</option>
+      <option >과자</option>
+      <option >아이스크림</option>
+    </select>
+    <input id="productName" placeholder="제품명">
+    <input id="productPrice" placeholder="제품가격">
+    <input id="productImg" type="file">
+    <button id="productBth" onclick="productpush()">등록</button>
+  </div>
+  <div id="main">
+    <table id="tab">
+      <thead>
+        <tr><th>이미지</th><th>카테고리명</th><th>상품명</th><th>가격</th><th>등록일</th><th>비고</th></tr>
+      </thead>
+      <tbody id="tbodyAdd">
+        <tr><td><img src="https://placehold.co/ "></td><td>1</td><td>코카콜라</td><td>1,000</td><td>2026-01-12</td><td id="Bth"><button class="remove" onclick="func1()">삭제</button ><button class="retry"onclick="func2()">수정</button></td></tr>
+        <tr><td><img src="https://placehold.co/ "></td><td>2</td><td>새우깡</td><td>1,200</td><td>2026-01-12</td><td><button class="remove" onclick="func1()">삭제</button ><button class="retry"onclick="func2()">수정</button></td></tr>
+        <tr><td><img src="https://placehold.co/ "></td><td>1</td><td>칠성사이다</td><td>900</td><td>2026-01-12</td><td><button class="remove"onclick="func1()">삭제</button ><button class="retry"onclick="func2()">수정</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script src="js종합실습.js"></script>
+</body>
+</html>
