@@ -19,12 +19,12 @@
         <div class="left">
          <div class="left-top"><h3>부서 관리</h3></div>
          <div class="left-center">
-          <input placeholder="신규 부서명 입력"/>
+          <input class="t1" placeholder="신규 부서명 입력"/>
           <button onclick="func1()">추가</button>
          </div>
          <div class="left-bottom">
           <table>
-            <thead>
+            <thead class="title">
               <tr><th>부서명</th><th>관리</th></tr>
             </thead>
             <tbody id="a">
@@ -40,17 +40,17 @@
           <div class="center-top">
             <div class="name">
               <li>이름</li>
-              <input type="text" />
+              <input class="e1" type="text" />
             </div>
             <div class="position">
               <li>직급</li>
-              <input type="text" />
+              <input class="e2" type="text" />
             </div>
           </div>
           <div class="center-center1">
             <div class="Department">
               <li>부서</li>
-              <select> 부서를 선택하세요
+              <select class="e3"> 부서를 선택하세요
                 <option>개발팀</option>
                 <option>디자인팀</option>
                 <option>기획팀</option>
@@ -58,7 +58,7 @@
             </div>
             <div class="picture">
               <li>사진</li>
-              <input type="file">
+              <input class="e4" type="file">
             </div>
           </div>
           <div class="center-center2">
@@ -107,7 +107,7 @@
             <h3>사원 휴가 신청</h3>
             <div class="EmployeeName">
               <li>신청 사원</li>
-              <section> 휴가 신청 사워을 선택하세요
+              <section class="v1"> 휴가 신청 사워을 선택하세요
                 <option>김민준</option>
                 <option>이서연</option>
                 <option>박도윤</option>
@@ -116,15 +116,15 @@
             <div class="date">
               <div class="date-start">
                 <li>휴가 시작일</li>
-                <input type="date" />
+                <input class="v2" type="date" />
               </div>
               <div class="date-end">
                 <li>휴가 종료일</li>
-                <input type="date" />
+                <input class="v3" type="date" />
               </div>
             </div>
             <div class="reason">
-              <input type="text" placeholder="예: 여름휴가" />
+              <input class="v4" type="text" placeholder="예: 여름휴가" />
             </div>
             <div class="Vacationrequest">
               <button onclick="func7()">신청</button>

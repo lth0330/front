@@ -42,8 +42,8 @@ li{ list-style-type : none; }
  
 }
 
-.title > tr > th{
-  width: 100px;
+.title > tr> td{
+  width: 200px;
 }
 #a{
  background-color: white;
@@ -72,4 +72,3 @@ li{ list-style-type : none; }
   width: 360px;
 }
 
-.{}
