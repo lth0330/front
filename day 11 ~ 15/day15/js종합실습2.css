@@ -2,47 +2,42 @@
 *{
   padding: 5px;
   margin: 0px;
-
   box-sizing: content-box;
 }
-
 li{ list-style-type : none; }
-
-
-/* 헤더 */
-
+/*-------------------------------- 헤더-------------------------- */
 .wrap{background-color:#f1f5f9; width: 1720px; margin: 0px auto;}
 .header{ text-align: center;}
 .main1{display: flex; }
 .header > li{color: gray;}
 
-/* 부서관리 */
-
+/* ----------------------------- 부서관리 -------------------------*/
 .left{ 
   background-color: white;
   border-radius: 10px;
   width: 360px;
   margin: 10px;
 }
+
 .left-top {
   text-align: left;
   border-bottom: 1px solid #f1f5f9;
   margin: 20px;
 }
 
-
 .left-center{
   display: flex;
   justify-content: center;
 }
+
 .left-center > input{
   background-color: #f1f5f9;
   border-radius: 5px;
   width: 220px;
   padding: 10px;
-  border-color: #eeeeee
-  
+  border: 1px solid #eeeeee;
 
+  
 }
 
 .left-center > button {
@@ -61,9 +56,8 @@ li{ list-style-type : none; }
   border-bottom: 1px solid #f1f5f9;
   padding-left: 10px;
 }
-#관리{
-  width: 100px;
-}
+
+#관리{width: 100px;}
 
 .reBth{
   background-color: white;
@@ -80,7 +74,7 @@ li{ list-style-type : none; }
 .left-bottom > table{
   margin: 0px auto;
 }
-/*센터*/
+/*-----------------------------센터----------------------------------*/
 .center{
   width: 850px;
    border-radius: 10px;
@@ -90,7 +84,7 @@ li{ list-style-type : none; }
   background-color: white;
 }
 
-/* 사원등록*/
+/* -----------------------------사원등록-----------------------------*/
 .center-top{
   display: flex;
   justify-content: space-between;
@@ -114,15 +108,14 @@ li{ list-style-type : none; }
 .center-center1 > div{
   width: 360px;
 }
+
 .e3{
    width: 342px;
    padding: 10px;
    border-radius: 5px;
 }
 
-.center-center2{
-  text-align: right;
-}
+.center-center2{text-align: right;}
 
 .center-center2 > button{
   background-color: blue;
@@ -131,19 +124,13 @@ li{ list-style-type : none; }
   padding: 8px 15px;
   border: 0px;
 }
-/* 사원 전체 목록*/
+/* -------------------------------사원 전체 목록-----------------------*/
 
-.table2{
-    
-    margin: 0px auto;
-}
-.table2 > table{
-  width: 100%;
-  text-align: center;
-}
+.table2{margin: 0px auto;}
 
+.table2 > table{width: 100%;text-align: center;}
 
-/*오른쪽*/
+/*-------------------------------------오른쪽-------------------------*/
 
 .right{
   width: 360px;
@@ -153,10 +140,10 @@ li{ list-style-type : none; }
   margin: 10px;
 }
 
-/* 사원 휴가 신청*/
-.EmployeeName{
-  border-top: 1px solid #f1f5f9;
-}
+/* ----------------------------------사원 휴가 신청----------------------*/
+
+.EmployeeName{ border-top: 1px solid #f1f5f9;}
+
 .EmployeeName > select{
   width: 315px;
   padding: 10px;
@@ -166,13 +153,11 @@ li{ list-style-type : none; }
 .date-start{
   width: 150px;
   padding: 0px;
-  
 }
+
 .date-end{
   width: 150px;
   padding: 0px;
- 
-  
 }
 
 .date-start > input{
@@ -183,8 +168,6 @@ li{ list-style-type : none; }
 .date-end > input{
    border-radius: 5px;
    padding: 10px;
-   
-  
 }
 
 .date{
@@ -198,9 +181,7 @@ li{ list-style-type : none; }
   border-radius: 5px;
 }
 
-.vacationRequest{
-  text-align: right;
-}
+.vacationRequest{text-align: right;}
 
 .vacationRequest > button{
   background-color: green;
@@ -210,7 +191,7 @@ li{ list-style-type : none; }
   border: 0px;
 }
 
-/*휴가 신청 전체 목록*/
+/*-----------------------------휴가 신청 전체 목록------------------------*/
 
 .list1{
   background-color: #f1f5f9;
@@ -223,7 +204,6 @@ li{ list-style-type : none; }
   margin: 10px 0px;
   border-radius: 8px;
 }
-
 
 .list1 > div{
   display: flex;
@@ -266,10 +246,6 @@ li{ list-style-type : none; }
   background-color: #f1f5f9;
 }
 
-tbody{
-  background-color: white;
-}
+tbody{background-color: white;}
 
-td{
-  border-bottom: 1px solid #f1f5f9;
-}
+td{border-bottom: 1px solid #f1f5f9;}
