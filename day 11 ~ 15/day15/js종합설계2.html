@@ -35,18 +35,21 @@
               <tbody id="a">
                 <tr>
                   <td id="부서">개발팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth"
-                      onclick="func3()">삭제</button></td>
+                  <td><button class="reBth" onclick="teamUpdate()">수정</button>
+                      <button class="removeBth"onclick="teamDelete()">삭제</button>
+                  </td>
                 </tr>
                 <tr>
                   <td id="부서">디자인팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth"
-                      onclick="func3()">삭제</button></td>
+                  <td><button class="reBth" onclick="teamUpdate()">수정</button>
+                      <button class="removeBth"onclick="teamDelete()">삭제</button>
+                  </td>
                 </tr>
                 <tr>
                   <td id="부서">기획팀</td>
-                  <td><button class="reBth" onclick="func2()">수정</button><button class="removeBth"
-                      onclick="func3()">삭제</button></td>
+                  <td><button class="reBth" onclick="teamUpdate()">수정</button>
+                      <button class="removeBth"onclick="teamDelete()">삭제</button>
+                  </td>
                 </tr>
 
               </tbody>
@@ -98,28 +101,31 @@
                 </thead>
                 <tbody id="b">
                   <tr>
-                    <td><img src="https://placehold.co/ "></td>
+                    <td><img src="https://placehold.co/100x100 "></td>
                     <td>김민준</td>
                     <td>개발팀</td>
                     <td>선임 개발자</td>
-                    <td><button class="reBth" onclick="func5()">수정</button><button class="removeBth"
-                      onclick="func6()">삭제</button></td>
+                    <td><button class="reBth" onclick="employeeUpdate()">수정</button>
+                        <button class="removeBth" onclick="employeeDelete()">삭제</button>
+                    </td>
                   </tr>
                   <tr>
-                    <td><img src="https://placehold.co/ "></td>
+                    <td><img src="https://placehold.co/100x100 "></td>
                     <td>이서연</td>
                     <td>디자인팀</td>
                     <td>수석 디자이너</td>
-                    <td><button class="reBth" onclick="func5()">수정</button><button class="removeBth"
-                      onclick="func6()">삭제</button></td>
+                    <td><button class="reBth" onclick="employeeUpdate()">수정</button>
+                        <button class="removeBth" onclick="employeeDelete()">삭제</button>
+                    </td>
                   </tr>
                   <tr>
-                    <td><img src="https://placehold.co/ "></td>
+                    <td><img src="https://placehold.co/100x100 "></td>
                     <td>박도윤</td>
                     <td>기획팀</td>
                     <td>팀장</td>
-                    <td><button class="reBth" onclick="func5()">수정</button><button class="removeBth"
-                      onclick="func6()">삭제</button></td>
+                    <td><button class="reBth" onclick="employeeUpdate()">수정</button>
+                        <button class="removeBth" onclick="employeeDelete()">삭제</button>
+                    </td>
                   </tr>
                 </tbody>
               </table>
@@ -165,7 +171,7 @@
                 <div class="list1">
                   <div>
                     <div>김민준</div>
-                    <div><button onclick="func8()">신청취소</button></div>
+                    <div><button onclick="vacationDelete()">신청취소</button></div>
                   </div>
                   <li>2025-08-04 ~ 2025-08-04</li>
                   <li>사유 : 병원 진료</li>
@@ -173,7 +179,7 @@
                 <div class="list2">
                   <div>
                     <div>이서연</div>
-                    <div><button onclick="func8()">신청취소</button></div>
+                    <div><button onclick="vacationDelete()">신청취소</button></div>
                   </div>
                   <li>2025-07-21 ~ 2025-07-25</li>
                   <li>사유 : 여름 휴가</li>
@@ -183,10 +189,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
-
 
     <script src='js종합설계2.js'></script>
 </body>
