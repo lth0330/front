@@ -33,7 +33,7 @@ function teamPrint() {
 
 
         html += `<tr>
-                    <td>${team.department}</td>
+                    <td id="부서">${team.department}</td>
                     <td><button class="reBth" onclick="teamUpdate(${team.tcode})">수정</button>
                         <button class="removeBth" onclick="teamDelete(${team.tcode})">삭제</button>
                     </td>
