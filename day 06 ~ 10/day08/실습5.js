@@ -1,4 +1,4 @@
-/*
+
 // 문제 1번 배열에서 최댓값 찾기
 let numbers=[23,5,67,12,88,34];
 let b = numbers[0];
@@ -31,10 +31,10 @@ for(let a=0; a <= userNames.length-1; a++ ){
 
  
 //4번 2차원 배열의 모든 요소 출력하기
-let numbers=[['A1','A2','A3'],['B1','B2','B3'],['C1','C2','C3']]
-for(let f1 = 0; f1 <=numbers.length-1; f1++){
-  for(let f2 = 0; f2 <=numbers[f1].length-1; f2++){
-    console.log(numbers[f1][f2])
+let numbers1=[['A1','A2','A3'],['B1','B2','B3'],['C1','C2','C3']]
+for(let f1 = 0; f1 <=numbers1.length-1; f1++){
+  for(let f2 = 0; f2 <=numbers1[f1].length-1; f2++){
+    console.log(numbers1[f1][f2])
   }
 }
 
@@ -150,7 +150,6 @@ for(index =0; index <= carNumbers.length-1; index++){
 //toLocaleString() = 천단위 기호 (,)
 document.write(html10);
 
-*/
 
 
 

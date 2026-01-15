@@ -1,4 +1,4 @@
-/*
+
 // 문제 1 : prompt로 제품 정보 객체 만들기
 const 제품명 = prompt("제품명 입력 : ");
 const 가격 = prompt("가격 입력 :");
@@ -63,7 +63,7 @@ for(let index=0; index<=products.length-1; index++){
 }if(check ==false){
 console.log(`상품을 찾을 수 없습니다.`)
 }
-*/
+
 
 
 // 문제 5: 객체 배열 필터링하기
