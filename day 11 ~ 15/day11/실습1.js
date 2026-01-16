@@ -1,4 +1,4 @@
-
+/*
 // 문제 1 : prompt로 제품 정보 객체 만들기
 const 제품명 = prompt("제품명 입력 : ");
 const 가격 = prompt("가격 입력 :");
@@ -82,16 +82,22 @@ for(index=0; index<=users.length-1; index++){
 }
 console.log(activeUsers)
 
-/*
+
 // 문제 6: 객체 배열 데이터 변환하기
 
 // movies 배열에 있는 각 영화 객체에서 title 속성만 추출하여, 영화 제목들로만 이루어진 새로운 배열 movieTitles를 만들고 콘솔에 출력하시오.
-
 const movies = [
 { title: '인셉션', director: '크리스토퍼 놀란' },
 { title: '기생충', director: '봉준호' },
 { title: '매트릭스', director: '워쇼스키 자매' }];
 
+let movieTitles = []
+
+for(let index = 0; index <= movies.length-1; index++){
+    let movie = movies[index].title
+    movieTitles.push(movie);
+}
+console.log(movieTitles)
 
 // 문제 7: 데이터 그룹화하기
 // 다음 team 배열을 department를 기준으로 그룹화하여, 아래 result와 같은 형태로 만드시오.
@@ -107,6 +113,21 @@ const team = [
 // '개발팀': ['철수', '민수'],
 // '기획팀': ['영희', '지혜']}
 
+let 개발팀 = [];
+let 기획팀 = [];
+for(let index=0; index <= team.length-1; index++){
+
+  if(team[index].department == '개발팀'){
+    let 개발 = team[index].name 
+    개발팀.push(개발);
+  }
+  else if(team[index].department == '기획팀'){
+    let 기획 = team[index].name 
+    기획팀.push(기획);
+} else{console.log("확인불가능")}
+}
+console.log(개발팀);
+console.log(기획팀);
 
 
 // 문제 8: 장바구니 총액 계산하기
@@ -115,16 +136,28 @@ const team = [
 // productsInfo 배열: 각 요소는 상품의 고유 id와 price(가격)를 가집니다.
 // cart 배열을 기준으로, 장바구니에 담긴 모든 상품의 총 결제 금액을 계산하여 콘솔에 출력하세요.
 const cart = [{ id: 1, quantity: 2 },{ id: 3, quantity: 1 }];
-const productsInfo = [{ id: 1, price: 1000 },{ id: 2, price: 5000 }, 
-// 장바구니에 없는 상품{ id: 3, price: 2500 }];
-
-
+const productsInfo = [{ id: 1, price: 1000 },{ id: 2, price: 5000 }, { id: 3, price: 2500 }];
+let money =0;
+for(let index = 0; index<=cart.length-1; index++){
+  for(let index2 = 0; index2<= productsInfo.length-1; index2++){
+    if(cart[index].id == productsInfo[index2].id){
+      money += (cart[index].quantity * productsInfo[index2].price)
+    }
+  } 
+}
+console.log(money);
+*/
 // 문제 9: 투표 결과 집계하기
 // 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어 콘솔에 출력하시오.
-
 // 출력 예시: { A: 3, B: 3, C: 1 }
 const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
+let result = {};
 
+
+
+
+
+/*
 
 // 문제 10: 웹툰 평점 시각화하기
 // webtoons 배열의 데이터를 이용하여, 각 웹툰의 평점을 별(★, ☆)로 시각화하여 HTML에 출력하시오.
