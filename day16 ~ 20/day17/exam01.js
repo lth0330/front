@@ -19,7 +19,7 @@ setInterval(증가함수, 1000); // 1초마다 '증가함수라는 함수가 자
 // 주의할점 : 증가함수: 함수 그자체   vs   증가함수() : 함수실행
 
 
-// [2]
+// [2] 현재 시간 출력
 function 시계함수(){
   let today = new Date();// new date : 현재 시스템의 날짜/ 시간 반환 함수
   let hour = today.getHours();
@@ -29,10 +29,10 @@ function 시계함수(){
   const box2 =document.querySelector('#box2')
   box2.innerHTML = time;
 }
-
 setInterval(시계함수,1000);
 
-// [3]
+
+// [3]  타이머 설정 (시작, 중지, 다시시작 )
 let time = 0; // 현재 타이머의 시간(초)
 let timerId;  // interval 객체를 저장하는 변수
 function 타이머시작(){
@@ -40,7 +40,14 @@ function 타이머시작(){
   timerId = setInterval(시간함수,1000);
   
 }
-function 타이머종료(){
+function 타이머중지(){
   clearInterval(timerId); // clearInterval(종료할 interval객체 )
+
+}
+
+function 시간함수(){
+  time++; //1증가
+  document.querySelector('#box3').innerHTML = time;
+   
 
 }

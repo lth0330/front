@@ -146,18 +146,35 @@ for(let index = 0; index<=cart.length-1; index++){
   } 
 }
 console.log(money);
-*/
+
 // 문제 9: 투표 결과 집계하기
 // 다음 votes 배열은 투표 결과를 나타냅니다. 각 후보가 몇 표를 받았는지 집계하여, 후보의 이름이 키이고 득표수가 값인 객체를 만들어 콘솔에 출력하시오.
 // 출력 예시: { A: 3, B: 3, C: 1 }
 const votes = ['A', 'B', 'B', 'C', 'A', 'B', 'A'];
-let result = {};
+let Anumber = 0;
+let Bnumber = 0;
+let Cnumber = 0;
+let obj = {'A' : Anumber, 'B' : Bnumber , 'C' : Cnumber};
+for(let index = 0; index<=votes.length-1; index++){
+  if(votes[index] =='A'){
+    
+    obj.A = ++Anumber
+  }
+  else if(votes[index] =='B'){
+    obj.B = ++ Bnumber
+  }
+  else if(votes[index] =='C'){
+   obj.C= ++Cnumber
+  }
+  else{console.log("다시")}
+}
+console.log(obj);
 
 
 
+*/
 
 
-/*
 
 // 문제 10: 웹툰 평점 시각화하기
 // webtoons 배열의 데이터를 이용하여, 각 웹툰의 평점을 별(★, ☆)로 시각화하여 HTML에 출력하시오.
@@ -170,14 +187,16 @@ let result = {};
 // { title: '전지적 독자 시점', rating: 9.7 }
 // ];
 /* HTML 출력 예시:
-
  나 혼자만 레벨업 ★★★★★★★★★☆
-
  유미의 세포들 ★★★★★★★★★☆
-
  전지적 독자 시점 ★★★★★★★★★☆
-
 */
+
+
+
+
+
+
 
 
 // 문제11 : 공공데이터 포털 : 인천 부평구 맛집 현황 테이블 만들기
